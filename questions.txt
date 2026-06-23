@@ -1,0 +1,2 @@
+1. Can I use local coding agent with agent-dev-kit? Or does all development have to happen with Genie Code on the Databricks platform?
+2. 

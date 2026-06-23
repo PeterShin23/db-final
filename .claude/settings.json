@@ -2,5 +2,18 @@
   "enabledPlugins": {
     "frontend-design@claude-plugins-official": true,
     "ponytail@ponytail": true
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/pscs/.ai-dev-kit/repo/.claude-plugin/check_update.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
   }
 }
