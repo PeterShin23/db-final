@@ -36,8 +36,6 @@ For the purposes of this interview:
 3. Any code that will land for the visual aspect of the project should go in `app`
 4. What would be nice is that there's a button that's clickable that shows a full page pop-up with a close button of the architecture of how Databricks is going to be used (data flowing in, transformed, and how it's going to be used, ideally we also use databricks svg/img assets as well) AND the medallion architecture of what the data looks like at each step.
 
-`/poc-example` is an example directory of an app I made as a test run. It's not perfect, but it gives you an idea of what I want.
-
 ---
 
 `/presentation` is the directory where an HTML/CSS/Javascript presentation slide deck should be. The presentation should be nice without going overboard. The people listening to the presentation may include non-technical stakeholders so avoid jargon that's too technical, and if the jargon is necessary then we must define it. Keep in-slide animations simple and apply when it drives home the point. No transitions from slide-to-slide. The transitions should work with arrow keys. Run it on localhost:3002.

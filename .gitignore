@@ -13,3 +13,10 @@ opencode.json
 .databricks
 .cursor
 .env.mine
+
+node_modules
+.venv
+
+__pycache__
+*.pyc
+*.pyo
