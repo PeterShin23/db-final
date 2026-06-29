@@ -1,0 +1,3 @@
+version: 1
+name: "Patient Signal Workbench"
+description: "Governed patient-access analytics for MedPulse life-sciences analysts."

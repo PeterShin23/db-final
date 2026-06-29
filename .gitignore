@@ -9,3 +9,7 @@
 .vscode
 GEMINI.md
 opencode.json
+
+.databricks
+.cursor
+.env.mine

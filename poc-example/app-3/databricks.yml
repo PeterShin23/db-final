@@ -1,0 +1,32 @@
+bundle:
+  name: patient-signal-workbench
+
+variables:
+  warehouse_id:
+    description: SQL warehouse ID used by the Patient Signal Workbench
+
+resources:
+  apps:
+    patient_signal_workbench:
+      name: app-3
+      description: Governed patient-access analytics for MedPulse analysts
+      source_code_path: .
+      config:
+        command:
+          - python
+          - -m
+          - backend.main
+        env:
+          - name: DATA_BACKEND
+            value: warehouse
+          - name: DATABRICKS_WAREHOUSE_ID
+            valueFrom: sql-warehouse
+      resources:
+        - name: sql-warehouse
+          sql_warehouse:
+            id: ${var.warehouse_id}
+            permission: CAN_USE
+
+targets:
+  dev:
+    default: true

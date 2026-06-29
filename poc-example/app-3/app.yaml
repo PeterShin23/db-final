@@ -1,0 +1,9 @@
+command:
+  - python
+  - -m
+  - backend.main
+env:
+  - name: DATA_BACKEND
+    value: warehouse
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse
